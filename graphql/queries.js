@@ -1,23 +1,22 @@
 import { gql } from "@apollo/client";
 
-export const GET_CHARS_BY_NAME = gql`
-  query GET_CHAR_BY_NAME($name: String) {
-    characters(page: 1, filter: { name: $name }) {
+export const GET_CHARS = gql`
+  query GET_CHAR_BY_NAME($name: String, $species: String, $page: Int) {
+    characters(page: $page, filter: { name: $name, species: $species }) {
       results {
         id
-        name
         image
+        name
+        status
+        species
+        created
+        episode {
+          id
+        }
       }
-    }
-  }
-`;
-
-export const GET_CHARS_BY_NAME_AND_PAGE = gql`
-  query GET_CHARS_BY_PAGE($page: Number!, $name: String!) {
-    characters(page: $page, filter: { name: $name }) {
-      results {
-        name
-        image
+      info {
+        next
+        prev
       }
     }
   }
