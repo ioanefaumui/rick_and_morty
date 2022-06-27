@@ -9,7 +9,7 @@ const NavLink = ({ text, path, marginRight }) => {
   return (
     <Link href={path}>
       <a
-        className={`p-4 sm:p-0 block mr-0 sm:${marginRight || "mr-0"} ${
+        className={`p-4 sm:p-0 block mr-0 ${marginRight && "sm:mr-20"} ${
           isCurrentPage ? "text-cyan-400" : "text-white"
         }`}
       >
