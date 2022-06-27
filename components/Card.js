@@ -1,19 +1,44 @@
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "./Modal";
 
-const Card = ({ name, image, key }) => {
+const Card = ({ name, image, species, created, episode, id, character }) => {
+  const [modal, setModal] = useState(false);
+
+  const handleModal = (e) => {
+    setModal(!modal);
+  };
+
   return (
-    <li key={key} className="flex justify-center">
-      <div class="max-w-sm rounded overflow-hidden shadow-lg w-full">
+    <li className="flex justify-center">
+      {modal && (
+        <Modal
+          name={name}
+          image={image}
+          species={species}
+          created={created}
+          episode={episode}
+          id={id}
+          modal={modal}
+          handleModal={handleModal}
+          character={character}
+        />
+      )}
+
+      <div
+        className="max-w-sm rounded overflow-hidden shadow-lg w-full cursor-pointer"
+        onClick={(e) => handleModal(e)}
+      >
         <div className="relative w-auto h-48">
           <Image
-            class="object-cover"
+            className="object-cover"
             src={image}
             alt="Sunset in the mountains"
             layout="fill"
           />
         </div>
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">{name}</div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">{name}</div>
         </div>
       </div>
     </li>
