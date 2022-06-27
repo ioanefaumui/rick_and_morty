@@ -19,6 +19,7 @@ const List = ({ list, favorites }) => {
             episode={item.episode}
             character={item}
             id={item.id}
+            status={item.status}
           />
         ))}
     </ul>

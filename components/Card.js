@@ -2,7 +2,16 @@ import Image from "next/image";
 import { useState } from "react";
 import Modal from "./Modal";
 
-const Card = ({ name, image, species, created, episode, id, character }) => {
+const Card = ({
+  name,
+  image,
+  species,
+  created,
+  episode,
+  id,
+  character,
+  status,
+}) => {
   const [modal, setModal] = useState(false);
 
   const handleModal = () => {
@@ -22,6 +31,7 @@ const Card = ({ name, image, species, created, episode, id, character }) => {
           modal={modal}
           handleModal={handleModal}
           character={character}
+          status={status}
         />
       )}
 

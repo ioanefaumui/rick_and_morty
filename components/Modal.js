@@ -13,6 +13,7 @@ const Modal = ({
   modal,
   handleModal,
   character,
+  status,
 }) => {
   const { addFavorite, removeFavorite } = useContext(FavoriteContext);
   const router = useRouter();
@@ -53,6 +54,9 @@ const Modal = ({
           />
         </div>
         <p className="my-2 font-bold text-xl text-slate-800">{name}</p>
+        <span>
+          <b>Status:</b> {status}
+        </span>
         <p>
           <b>Espécie:</b> {species.includes("um") ? "Humano" : "Alien"}
         </p>
