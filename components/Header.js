@@ -1,8 +1,10 @@
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import CloseIcon from "./CloseIcon";
-import MenuIcon from "./MenuIcon";
+import { useState } from "react";
+import CloseIcon from "./Icons/CloseIcon";
+import MenuIcon from "./Icons/MenuIcon";
 import NavLink from "./NavLink";
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../public/assets/rick_and_morty_logo.svg";
 
 const menuLinks = [
   {
@@ -29,15 +31,16 @@ const Header = () => {
   };
 
   return (
-    <header className="py-2 sm:py-4 px-4 bg-cyan-900 text-white  md:px-0">
+    <header className="py-2 sm:py-4 px-4 bg-cyan-900 text-white md:px-0">
       <div className="container flex justify-between">
-        <div>
-          Logo
-          <img src="" alt="" />
-        </div>
+        <Link href="/">
+          <a className="flex">
+            <Image src={logo} alt="Rick and morty in green text" />
+          </a>
+        </Link>
         <nav className="flex">
           <ol
-            className={`absolute bg-cyan-900 top-14 right-0 sm:flex sm:static sm:w-auto ${
+            className={`absolute z-10 bg-cyan-900 top-14 right-0 sm:flex sm:static sm:w-auto ${
               open ? "w-fit" : "w-0"
             }`}
           >
