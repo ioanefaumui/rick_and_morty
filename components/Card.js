@@ -5,7 +5,7 @@ import Modal from "./Modal";
 const Card = ({ name, image, species, created, episode, id, character }) => {
   const [modal, setModal] = useState(false);
 
-  const handleModal = (e) => {
+  const handleModal = () => {
     setModal(!modal);
   };
 
@@ -27,7 +27,7 @@ const Card = ({ name, image, species, created, episode, id, character }) => {
 
       <div
         className="max-w-sm rounded overflow-hidden shadow-lg w-full cursor-pointer"
-        onClick={(e) => handleModal(e)}
+        onClick={() => handleModal()}
       >
         <div className="relative w-auto h-48">
           <Image
