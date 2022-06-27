@@ -55,7 +55,12 @@ const Modal = ({
         </div>
         <p className="my-2 font-bold text-xl text-slate-800">{name}</p>
         <span>
-          <b>Status:</b> {status}
+          <b>Status:</b>{" "}
+          {status.includes("unk")
+            ? "Desconhecido"
+            : status.includes("liv")
+            ? "Vivo"
+            : "Morto"}
         </span>
         <p>
           <b>Espécie:</b> {species.includes("um") ? "Humano" : "Alien"}
