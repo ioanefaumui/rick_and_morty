@@ -1,15 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick and Morty
 
-## Getting Started
+Este é um projeto de uma aplicaçao web para consulta de informações dos personagens de Rick and Morty, um clássico cartoon. As principais ferramentas utilizadas nesta aplicaçao foram: 
+- Next.js
+- GraphQL
+- Tailwind CSS
+- Context API
+- Cypress E2E
 
-First, run the development server:
+---
+
+## Começando
+
+Para iniciar o projeto em sua máquina, rode os seguintes comandos em seu terminal:
 
 ```bash
-npm run dev
-# or
+git clone
+cd rick_and_morty
+yarn install
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
