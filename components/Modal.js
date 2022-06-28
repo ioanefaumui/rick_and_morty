@@ -14,6 +14,7 @@ const Modal = ({
   handleModal,
   character,
   status,
+  id,
 }) => {
   const { addFavorite, removeFavorite } = useContext(FavoriteContext);
   const router = useRouter();
@@ -73,6 +74,7 @@ const Modal = ({
           <b>Criado em:</b> {handleDate(created)}
         </p>
         <button
+          id={`favorite_btn_${id}`}
           className={`${
             isFavorite
               ? "bg-red-500 hover:bg-red-600"

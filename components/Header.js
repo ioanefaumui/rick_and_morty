@@ -31,7 +31,10 @@ const Header = () => {
   };
 
   return (
-    <header className="py-2 sm:py-4 px-4 bg-cyan-900 text-white md:px-0">
+    <header
+      id="header"
+      className="py-2 sm:py-4 px-4 bg-cyan-900 text-white md:px-0"
+    >
       <div className="container flex justify-between">
         <Link href="/">
           <a className="flex">

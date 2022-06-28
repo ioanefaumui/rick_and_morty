@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Card from "./Card";
 
-const List = ({ list, favorites }) => {
+const List = ({ list, favorites }, index) => {
   const router = useRouter();
 
   const characters = router.pathname == "/favoritos" ? favorites : list;
@@ -20,6 +20,7 @@ const List = ({ list, favorites }) => {
             character={item}
             id={item.id}
             status={item.status}
+            index={index}
           />
         ))}
     </ul>
