@@ -1,10 +1,12 @@
 # Rick and Morty
-Este é um projeto de uma aplicaçao web para consulta de informações dos personagens de Rick and Morty, um clássico cartoon. As principais ferramentas utilizadas nesta aplicaçao foram: 
+Este é um projeto de uma aplicaçao web para consulta de informações dos personagens de Rick and Morty, um clássico cartoon. As principais ferramentas e técnicas utilizadas nesta aplicaçao foram: 
 - Next.js
 - GraphQL
 - Tailwind CSS
 - Context API
 - Cypress E2E
+- Responsividade
+- Componentização
 
 
 ## Funcionalidades
@@ -12,6 +14,7 @@ A aplicação web permite que o usuário pesquise informações sobre cada perso
 
 - **Buscar personagens por nome**
 - **Filtrar personagens por espécie**
+- **Visualização detalhada do personagem**
 - **Adicionar e remover personagens dos favoritos**
 
 
@@ -19,7 +22,7 @@ A aplicação web permite que o usuário pesquise informações sobre cada perso
 Para iniciar o projeto em sua máquina, rode os seguintes comandos em seu terminal:
 
 ```bash
-git clone
+git clone https://github.com/ioanefaumui/rick_and_morty.git
 cd rick_and_morty
 yarn install
 yarn dev
