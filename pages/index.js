@@ -14,12 +14,15 @@ export default function Home() {
         />
       </Head>
       <main className="container pt-20 flex flex-col items-center px-4">
-        <Image src={heroImage} width="489px" height="149px" />
-        <h1 className="text-3xl my-8 max-w-sm text-center">
+        <Image id="hero_image" src={heroImage} width="489px" height="149px" />
+        <h1 id="hero_heading" className="text-3xl my-8 max-w-sm text-center">
           Conheça tudo sobre os seus personagens favoritos de Rick and Morty!
         </h1>
         <Link href="/pesquisa">
-          <a className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded">
+          <a
+            id="hero_cta"
+            className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded"
+          >
             Começar
           </a>
         </Link>

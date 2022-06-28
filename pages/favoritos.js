@@ -17,7 +17,7 @@ const FavoritosPage = () => {
       </Head>
 
       <div className="container">
-        <h1 className="text-3xl font-bold my-8">
+        <h1 id="fav_message" className="text-3xl font-bold my-8">
           {favorites?.length > 0
             ? "Meus favoritos"
             : "Nenhum personagem adicionado"}

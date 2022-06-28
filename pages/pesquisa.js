@@ -41,6 +41,7 @@ const PesquisaPage = () => {
 
       <div className="container pt-8 px-4 md:px-9">
         <form
+          id="search_form"
           onSubmit={(e) => e.preventDefault()}
           className="flex flex-col items-center"
         >
@@ -48,13 +49,14 @@ const PesquisaPage = () => {
             <div>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight  focus:shadow-outline"
-                id="username"
+                id="char_input"
                 type="text"
                 placeholder={`Personagem: ${handleCharSpecie()}`}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
             <button
+              id="fetch_button"
               className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded"
               onClick={() => getCharsByName({ variables })}
             >
