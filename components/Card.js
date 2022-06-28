@@ -11,6 +11,7 @@ const Card = ({
   id,
   character,
   status,
+  index,
 }) => {
   const [modal, setModal] = useState(false);
 
@@ -19,7 +20,7 @@ const Card = ({
   };
 
   return (
-    <li className="flex justify-center">
+    <li className="card flex justify-center">
       {modal && (
         <Modal
           name={name}
@@ -32,6 +33,7 @@ const Card = ({
           handleModal={handleModal}
           character={character}
           status={status}
+          index={index}
         />
       )}
 
