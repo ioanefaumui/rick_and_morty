@@ -36,3 +36,13 @@ Terminal 2:
 ```bash
 yarn cypress open
 ```
+
+## Mídia
+- **Página inicial**
+![image](https://user-images.githubusercontent.com/73440390/176075870-5a8695fa-ff37-4d8e-abab-735041056183.png)
+
+- **Página de buscar personagens**
+![image](https://user-images.githubusercontent.com/73440390/176076355-1c4d722a-2cb3-452e-ac5c-ce3dcb5ae35a.png)
+
+- **Página de favoritos**
+![image](https://user-images.githubusercontent.com/73440390/176076454-300a220a-d08d-4cb5-8633-5b6698811afb.png)
