@@ -1,5 +1,5 @@
 # Rick and Morty
-Este é um projeto de uma aplicaçao web para consulta de informações dos personagens de Rick and Morty, um clássico cartoon. As principais ferramentas e técnicas utilizadas nesta aplicaçao foram: 
+Este é um projeto de uma aplicaçao web para consulta de informações dos personagens de Rick and Morty. Os dados são requisitados através da [API GraphQL](https://rickandmortyapi.com/graphql). As principais ferramentas e técnicas utilizadas nesta aplicaçao foram: 
 - Next.js
 - GraphQL
 - Tailwind CSS
